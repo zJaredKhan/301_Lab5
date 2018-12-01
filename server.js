@@ -11,7 +11,7 @@ const app = express();
 
 //port
 
-const PORT = 9000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./public'));
 
